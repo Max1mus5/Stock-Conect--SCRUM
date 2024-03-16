@@ -19,4 +19,4 @@ git commit -m "MENSAJE DE LO QUE SE ESTA ACTUALIZANDO EN EL COMMIT"
 configurar rama remota (solo se hace la primera vez):
 git push --set-upstream origin [nombre de su rama]
 
-git push origin
+git push 
