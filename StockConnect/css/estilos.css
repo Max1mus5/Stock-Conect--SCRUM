@@ -3,12 +3,28 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background:url('../images/icons/LOGOTEXTO.png') no-repeat; /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta de tu imagen */
     background-size:contain ;
     background-color: #000000;
     background-attachment: fixed;
-    background-position: center;
+    background-position: center 50px;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1;
 }
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/icons/LOGOTEXTO.png') no-repeat center 50px;
+    background-size: contain;
+    opacity: 0.5; 
+    z-index: -999; 
+}
+
 
 ul {
     padding: 0;
@@ -18,7 +34,10 @@ ul {
 
 .header {
     width: 100%;
-    height: 100vh;
+    height: 100px;
+    z-index: 999;
+    position: relative;
+    top:0px;
 
 }
 
@@ -104,4 +123,69 @@ ul {
         background-color: #ffffff00;
         backdrop-filter: none;
     }
+}
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header__nav {
+    height: 100px;
+    width: 100%;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: transparent; /* Añade un color de fondo para la barra de navegación */
+}
+
+/* Estilo de los enlaces */
+.nav__links {
+    position: relative;
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo del indicador de enlace */
+.nav__links:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 50%;
+    bottom: -10px;
+    transition: width 0.2s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* Cambiar color del texto al pasar el ratón */
+.nav__links:hover {
+    color: #ffff;
+}
+
+/* Expandir el indicador al pasar el ratón */
+.nav__links:hover:after {
+    width: 100%;
+}
+
+/* Estilo para el logo y el botón de cierre */
+.nav__items--img img, .nav__close {
+    height: 100px;
+    width: 100px;
+}
+
+.nav__link--menu{
+    gap: 30px;
+}
+
+.particles-js{
+    position: absolute;
+    z-index: -1;
 }
