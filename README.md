@@ -1,6 +1,6 @@
 <div style="display: flex; align-items: center;">
   <img src="./StockConnect/images/icons/M-LOGO.png" width=100/>
-   <img src="./StockConnect/images/icons/StockConnect.png" width=600/>
+   <img src="./StockConnect/images/icons/StockConnect.png" width=600/ center>
 
 </div>
 
