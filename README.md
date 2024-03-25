@@ -1,7 +1,6 @@
-<div style="display: flex; align-items: center;">
+<div style="display: flex; align-items: center; justify-content: center;">
   <img src="./StockConnect/images/icons/M-LOGO.png" width=100/>
-   <img src="./StockConnect/images/icons/StockConnect.png" width=300/>
-
+  <img src="./StockConnect/images/icons/StockConnect.png" width=300/>
 </div>
 
 StockConnect es una plataforma de gestión de inventario y cadena de suministro que ayuda a las empresas a optimizar sus operaciones y reducir costos. Este proyecto proporciona una interfaz web para conocer más sobre StockConnect y cómo funciona.
