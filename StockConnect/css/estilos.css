@@ -3,17 +3,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background:url('../images/icons/LOGOTEXTO.png') no-repeat; /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta de tu imagen */
-    background-size:contain ;
+    background: url('../images/icons/LOGOTEXTO.png') no-repeat;
+    /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta de tu imagen */
+    background-size: contain;
     background-color: #000000;
     background-attachment: fixed;
     background-position: center;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
-    width: 500px;
 }
 
 .header {
@@ -22,26 +17,23 @@ ul {
 
 }
 
+li a {
+    width: 20%;
+    color: #fff;
+    text-decoration: none;
+}
+
 .header__nav {
     display: flex;
     justify-content: center;
-    align-items: center;
-    backdrop-filter:  blur(10px);
+    position: static;
+    backdrop-filter: blur(10px);
 }
 
-.nav__link {
+.nav__link--menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.nav__items {
-    list-style: none;
-}
-
-.nav__links {
-    color: #fff;
-    text-decoration: none;
 }
 
 .nav__menu {
@@ -64,6 +56,7 @@ ul {
     .nav__menu {
         display: block;
     }
+
     .nav__link--menu {
         position: fixed;
         background-color: #000;
@@ -80,11 +73,13 @@ ul {
         pointer-events: none;
         transition: .7s opacity;
     }
+
     .nav__link--show {
         --show: block;
         opacity: 1;
         pointer-events: unset;
     }
+
     .nav__close {
         position: absolute;
         top: 30px;
@@ -92,15 +87,18 @@ ul {
         width: 30px;
         cursor: pointer;
     }
-    .nav__img{
+
+    .nav__img {
         position: relative;
         right: 30px;
         top: 30px;
     }
-    .nav__items--img{
+
+    .nav__items--img {
         display: none;
     }
-    .header__nav{
+
+    .header__nav {
         background-color: #ffffff00;
         backdrop-filter: none;
     }
