@@ -1,0 +1,23 @@
+:root{
+  --dark-brown: #1f1c16;
+  --light-cream: #e7e1c5;
+  --muted-gold: #91856a;
+  --warm-brown: #9c8469;
+  --grey-brown: #807c74;
+}
+
+.scroll-view{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  color: var(--light-cream);
+  gap: 100px;
+  z-index: -2;
+  pointer-events: all; 
+}
+

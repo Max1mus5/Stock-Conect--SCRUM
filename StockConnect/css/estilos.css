@@ -3,18 +3,38 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background: url('../images/icons/LOGOTEXTO.png') no-repeat;
-    /* Reemplaza 'ruta_de_tu_imagen.jpg' con la ruta de tu imagen */
+    background: rgba(0, 0, 0, 1) url('../images/icons/LOGOTEXTO.png') no-repeat center 50px; 
     background-size: contain;
-    background-color: #000000;
-    background-attachment: fixed;
-    background-position: center;
+    background-attachment: fixed; 
+    background-position: center 50px;
+    z-index: -990;
+}
+
+body::before {
+    content: "";
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Color de fondo con opacidad */
+    z-index: -999; 
+    pointer-events: all; 
+}
+
+html{
+    pointer-events: all; 
 }
 
 .header {
     width: 100%;
-    height: 100vh;
-
+    height: 100px;
+    z-index: 999;
+    position: relative;
+    top:0px;
+    /* sticky on top */
+    position:sticky;
+    top: 0px;
 }
 
 li a {
@@ -26,8 +46,11 @@ li a {
 .header__nav {
     display: flex;
     justify-content: center;
-    position: static;
-    backdrop-filter: blur(10px);
+    align-items: center;
+    backdrop-filter:  blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 1;
+    user-select: none;
 }
 
 .nav__link--menu {
@@ -103,3 +126,95 @@ li a {
         backdrop-filter: none;
     }
 }
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header__nav {
+    height: 100px;
+    width: 100%;
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 10px 20px;
+    background-color: transparent; /* Añade un color de fondo para la barra de navegación */
+}
+
+/* Estilo de los enlaces */
+.nav__links {
+    position: relative;
+    text-decoration: none;
+    color: #a0a0a0;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo del indicador de enlace */
+.nav__links:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 3px;
+    width: 0;
+    left: 50%;
+    bottom: -10px;
+    transition: width 0.2s ease-in-out;
+    transform: translateX(-50%);
+}
+
+/* Cambiar color del texto al pasar el ratón */
+.nav__links:hover {
+    color: #ffff;
+}
+
+/* Expandir el indicador al pasar el ratón */
+.nav__links:hover:after {
+    width: 100%;
+}
+
+/* Estilo para el logo y el botón de cierre */
+.nav__items--img img, .nav__close {
+    height: 100px;
+    width: 100px;
+}
+
+.nav__link--menu{
+    gap: 30px;
+}
+
+
+#particles-js {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%; 
+    z-index: -3;
+}
+
+#particles-js {
+    pointer-events: all; 
+}
+
+
+
+/* srcoll bar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 10px;
+}
+
