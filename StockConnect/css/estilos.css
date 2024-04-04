@@ -47,8 +47,8 @@ li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter:  blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter:  blur(10px);
     z-index: 1;
     user-select: none;
 }
