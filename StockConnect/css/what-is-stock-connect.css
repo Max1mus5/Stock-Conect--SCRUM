@@ -1,4 +1,5 @@
 .what-is-stock-connect-section{
+  box-sizing: border-box;
   width: 90%;
   height: 600px;
   display: flex;
@@ -51,5 +52,6 @@
 
 #what-is-stock-connect-image {
   max-width: 100%;
+  border-radius: 15px;
   height: auto;
 }
