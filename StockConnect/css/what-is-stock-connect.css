@@ -1,7 +1,7 @@
 .what-is-stock-connect-section{
   box-sizing: border-box;
   width: 90%;
-  height: 600px;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
