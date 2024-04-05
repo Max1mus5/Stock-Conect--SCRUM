@@ -1,4 +1,5 @@
 .what-is-stock-connect-section{
+  box-sizing: border-box;
   width: 90%;
   height: 600px;
   display: flex;
@@ -21,8 +22,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px); 
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px); 
   z-index: -2;
 }
 
@@ -51,5 +52,6 @@
 
 #what-is-stock-connect-image {
   max-width: 100%;
+  border-radius: 15px;
   height: auto;
 }

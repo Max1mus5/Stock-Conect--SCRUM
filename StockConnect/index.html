@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./css/about-stock-connect.css">
     <link rel="stylesheet" href="./css/what-is-stock-connect.css">
     <link rel="stylesheet" href="./css/suscription-section.css">
+    <link rel="stylesheet" href="./css/form.css">
     <title>StockConnect</title>
 </head>
 
@@ -24,56 +25,65 @@
                     <a href="#" class="nav__links">Información</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Contacto</a>
+                    <a href="#suscribete" class="nav__links">Suscribete</a>
                 </li>
+
                 <div class="nav__items nav__items--img">
                     <img src="images/icons/LOGOTEXTO.png" alt="" height="100px" width="100px">
                 </div>
+
                 <li class="nav__items">
-                    <a href="#" class="nav__links">Suscribete</a>
+                    <a href="#form" class="nav__links">Contacto</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#how-it-works-main-title" class="nav__links">Quienes somos</a>
+                    <a href="#quienessomos" class="nav__links">Quienes somos</a>
                 </li>
 
-                <img src="./images/icons-support/close.svg" class="nav__close">
+                <img src="./images/icons-support/close.svg" class="nav__close" alt="Close Icon" />
             </ul>
             <div class="nav__menu">
-                <img src="./images/icons-support/menu.svg" class="nav__img">
+                <img src="./images/icons-support/menu.svg" class="nav__img" alt="Menu Icon" />
             </div>
         </nav>
     </header>
 
-    <section class="scroll-view">
+    <section class="scroll-view" >
         <section class="what-is-stock-connect-section" id="what-is-stock-connect-section">
             <div class="what-is-container" id="what-is-stock-connect">
                 <h2 id="what-is-stock-connect-main-title">¿Qué es Stock-Connect?</h2>
-                <p id="what-is-stock-connect-content">StockConnect es una plataforma de gestión de inventario y cadena de suministro que ayuda a las empresas a optimizar sus operaciones y reducir costos. Ofrece una gestión de inventario avanzada, herramientas de análisis de datos en tiempo real, integración con sistemas existentes y comunicación efectiva con proveedores. StockConnect permite a las empresas mejorar la eficiencia de su cadena de suministro, reducir el exceso de inventario y garantizar una disponibilidad constante de productos y materiales esenciales.</p>
+                <p id="what-is-stock-connect-content">StockConnect es una plataforma de gestión de inventario y cadena
+                    de suministro que ayuda a las empresas a optimizar sus operaciones y reducir costos. Ofrece una
+                    gestión de inventario avanzada, herramientas de análisis de datos en tiempo real, integración con
+                    sistemas existentes y comunicación efectiva con proveedores. StockConnect permite a las empresas
+                    mejorar la eficiencia de su cadena de suministro, reducir el exceso de inventario y garantizar una
+                    disponibilidad constante de productos y materiales esenciales.</p>
             </div>
             <div class="what-is-container what-is-image-container">
                 <img src="./images/what-is-image.jpg" alt="Stock-Connect" id="what-is-stock-connect-image">
             </div>
         </section>
-        <section class="about-stock-connect-section">
+        <section class="about-stock-connect-section" id="quienessomos">
             <div class="info-section content-how-it-works" id="content-how-it-works">
                 <h2 id="how-it-works-main-title">¿Cómo funciona Stock-Connect?</h2>
                 <div class="how-it-works" id="how-it-works-content"></div>
             </div>
 
-            <div class="info-section" id="how-it-works">                    
+            <div class="info-section" id="how-it-works">
                 <p class="title clicked" onclick="updateGeneralInfo('Gestión de Inventario Avanzada')" data-info="
                 StockConnect ofrece una gestión de inventario avanzada que permite a las empresas llevar un registro minucioso de sus existencias. Permite el seguimiento en tiempo real de la cantidad, ubicación y estado de los productos en el inventario. Además, facilita la categorización de productos según su importancia y rotación, lo que ayuda en la priorización de la gestión de inventario.
                 ">Gestión de Inventario Avanzada</p>
                 <p class="title notclicked" onclick="updateGeneralInfo('Optimización de Reposiciones')" data-info=" 
                 La plataforma proporciona algoritmos y herramientas para calcular las cantidades óptimas de reposición, considerando la demanda histórica, las tendencias estacionales y las necesidades actuales. Esto ayuda a evitar situaciones de escasez o exceso de inventario, reduciendo los costos asociados con el almacenamiento excesivo o la falta de productos clave.
                 ">Optimización de Reposiciones</p>
-                <p class="title notclicked" onclick="updateGeneralInfo('Comunicación Efectiva con Proveedores')" data-info="
+                <p class="title notclicked" onclick="updateGeneralInfo('Comunicación Efectiva con Proveedores')"
+                    data-info="
                 StockConnect establece un canal de comunicación eficaz entre las empresas y sus proveedores. Facilita la automatización de pedidos, la recepción de actualizaciones sobre disponibilidad de productos y la gestión de plazos de entrega. Esto mejora la colaboración con los proveedores y garantiza un flujo constante de productos y materiales esenciales.
                 ">Comunicación Efectiva con Proveedores</p>
                 <p class="title notclicked" onclick="updateGeneralInfo('Análisis de Datos en Tiempo Real')" data-info="
                 La plataforma brinda capacidades avanzadas de análisis de datos en tiempo real. Permite a las empresas acceder a métricas clave, como el nivel de rotación de inventario, el costo promedio de almacenamiento y las tendencias de demanda. Estos análisis ayudan a tomar decisiones informadas y estratégicas para optimizar las operaciones, reducir costos y mejorar la eficiencia en la cadena de suministro.   
                 ">Análisis de Datos en Tiempo Real</p>
-                <p class="title notclicked" onclick="updateGeneralInfo('Integración con Sistemas Existentes')" data-info="
+                <p class="title notclicked" onclick="updateGeneralInfo('Integración con Sistemas Existentes')"
+                    data-info="
                 StockConnect se integra de manera fluida con los sistemas de gestión empresarial (ERP) y otras herramientas de software utilizadas por la empresa. Esto garantiza una implementación sin problemas y una sincronización de datos en tiempo real con los sistemas existentes.
                 ">Integración con Sistemas Existentes</p>
                 <p class="title notclicked" onclick="updateGeneralInfo('Alertas y Notificaciones')" data-info=" 
@@ -85,7 +95,7 @@
             </div>
         </section>
 
-        <section class="Susciption-section">
+        <section class="Susciption-section" id="suscribete">
             <div class="suscriptionContainer">
                 <div class="title_suscription">
                     <h2 id="titleSuscription">SUSCRIPCIONES</h2>
@@ -102,6 +112,41 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="form-section" id="form">
+            <div class="form">
+                <div class="contact-form">
+                    <h2>Contactenos</h2>
+                    <form>
+                        <div class="form__item">
+                            <label for="fullname">Nombre completo</label>
+                            <input type="text" name="fullname" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="email">Corrreo electronico</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="phone">Numero telefonico</label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="affair">Asunto</label>
+                            <input type="text" name="affair" required>
+                        </div>
+                        <div class="form__item--message">
+                            <label for="message">Mensaje</label>
+                            <input name="message" required></input>
+                        </div>
+
+                        <button type="button" onclick="alert('El formulario ha sido enviado')">Enviar
+                            formulario</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+
     </section>
 
     <div id="particles-js">
@@ -109,116 +154,116 @@
     </div>
     <script>
         particlesJS(
-        {
-            "particles": {
-                "number": {
-                    "value": 100,
-                    "density": {
-                        "enable": true,
-                        "value_area": 400
-                    }
-                },
-                "color": {
-                    "value": "#ffffff"
-                },
-                "shape": {
-                    "type": "circle",
-                    "stroke": {
-                        "width": 0,
-                        "color": "#000000"
-                    },
-                    "polygon": {
-                        "nb_sides": 8
-                    },
-                    "image": {
-                        "src": "img/github.svg",
-                        "width": 100,
-                        "height": 100
-                    }
-                },
-                "opacity": {
-                    "value": 0.5,
-                    "random": true,
-                    "anim": {
-                        "enable": true,
-                        "speed": 1,
-                        "opacity_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": {
-                        "enable": false,
-                        "speed": 40,
-                        "size_min": 0.1,
-                        "sync": false
-                    }
-                },
-                "line_linked": {
-                    "enable": true,
-                    "distance": 120,
-                    "color": "#ffffff",
-                    "opacity": 0.4,
-                    "width": 1
-                },
-                "move": {
-                    "enable": true,
-                    "speed": 3,
-                    "direction": "none",
-                    "random": true,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": true,
-                    "attract": {
-                        "enable": true,
-                        "rotateX": 600,
-                        "rotateY": 1200
-                    }
-                }
-            },
-            "interactivity": {
-                "detect_on": "window",
-                "events": {
-                    "onhover": {
-                        "enable": true,
-                        "mode": "repulse"
-                    },
-                    "onclick": {
-                        "enable": true,
-                        "mode": "push"
-                    },
-                    "resize": true
-                },
-                "modes": {
-                    "grab": {
-                        "distance": 200,
-                        "line_linked": {
-                            "opacity": 1
+            {
+                "particles": {
+                    "number": {
+                        "value": 100,
+                        "density": {
+                            "enable": true,
+                            "value_area": 400
                         }
                     },
-                    "bubble": {
-                        "distance": 400,
-                        "size": 40,
-                        "duration": 2,
-                        "opacity": 8,
-                        "speed": 3
+                    "color": {
+                        "value": "#ffffff"
                     },
-                    "repulse": {
-                        "distance": 200,
-                        "duration": 0.4
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 8
+                        },
+                        "image": {
+                            "src": "img/github.svg",
+                            "width": 100,
+                            "height": 100
+                        }
                     },
-                    "push": {
-                        "particles_nb": 4
+                    "opacity": {
+                        "value": 0.5,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
                     },
-                    "remove": {
-                        "particles_nb": 2
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 120,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 3,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": true,
+                        "attract": {
+                            "enable": true,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
                     }
-                }
-            },
-            "retina_detect": true
-        });
+                },
+                "interactivity": {
+                    "detect_on": "window",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "repulse"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 200,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
     </script>
 
     <script src="./js/menu.js"></script>
